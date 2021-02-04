@@ -35,11 +35,11 @@ jobs:
     - name: Deploy NodeJS app
       uses: appleboy/ssh-action@v0.1.2
       with:
-	host: http://172.104.210.14/
-	username: root
-	password: ${{ secrets.SSH_PASSWORD }}
-	script: |
-   	  cd ~/nodejs.org 
-	  git pull 
-	  kill \%1
-	  node start &
+	      host: 172.104.210.14
+	      username: root
+	      password: ${{ secrets.SSH_PASSWORD }}
+	      script: |
+   	      cd ~/nodejs.org 
+	        git pull 
+	        kill %1
+	        node start &

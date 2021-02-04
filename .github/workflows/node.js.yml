@@ -39,7 +39,7 @@ jobs:
 	  username: root
 	  password: ${{ secrets.SSH_PASSWORD }}
 	  script: |
-   		cd ~/nodejs.org
-		git pull
-		kill %1
+   		cd ~/nodejs.org 
+		git pull 
+		kill \%1
 		node start &

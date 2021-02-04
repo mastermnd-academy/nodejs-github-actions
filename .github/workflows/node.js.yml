@@ -38,7 +38,8 @@ jobs:
           username: root
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
+            source ~/.bashrc
             cd ~/nodejs.org 
             git pull 
             kill %1
-            node start &
+            npm start &

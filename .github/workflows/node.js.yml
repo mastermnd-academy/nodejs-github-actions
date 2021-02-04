@@ -43,4 +43,4 @@ jobs:
             nvm install --lts
             git pull 
             pkill node
-            /root/.nvm/versions/node/v14.15.4/bin/node server.js
+            /root/.nvm/versions/node/v14.15.4/bin/node server.js &
